@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+
+header{
+  height: 40px;
+  background-color: #2bc430;;
+}
+
+main{
+  height: 600px;
+  width: 750px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+footer{
+  height: 200px;
+  background-color: skyblue;
+}
+
+#top{
+  height: 35px;
+  background-color: greenyellow;
+  margin-bottom: 30px;
+  border-radius: 0 0 10px 10px;
+  color:white;
+  font-style: 18px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#container{
+  height: 410px;
+  padding: 10px;
+  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+  align-content: space-around;
+}
+
+aside{
+  height: 70px;
+  background-color: black;
+  margin-bottom: 50px;
+  margin: 30px 15px 60px 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+section{
+  height:45%;
+  width: 30%;
+  background-color: white;
+  border-radius: 7px;
+}
+
+#team{
+  width: 230px;
+  height: 70%;
+  background-color: gold;
+  border-radius: 5px;
+  font-style: 15px;
+}
+
+
+#hi{
+  width: 230px;
+  height: 70%;
+  background-color: gold;
+  color: black;
+  border-radius: 5px;
+  font-style: 15px;
+}
