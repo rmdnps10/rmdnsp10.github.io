@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'TAEBAEKmilkyway';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   box-sizing: border-box;
   margin:0;
@@ -5,25 +12,31 @@
 
 header{
   height: 40px;
-  background-color: #2bc430;;
+  background-color: rgb(15, 12, 64);
+  text-align: center;
+  color: #0B2447;
+}
+
+header p{
+  padding:10px;
+  text-align: center;
+  color: white;
 }
 
 main{
   height: 600px;
   width: 750px;
   margin: 0 auto;
-  background-color: black;
-}
-
-footer{
-  height: 200px;
-  background-color: skyblue;
+  background-color: #F8F5E4;
+  font-family: 'TAEBAEKmilkyway';
+  border-right: 3px solid  rgb(63, 73, 127);
+  border-left: 3px solid  rgb(63, 73, 127);
 }
 
 #top{
   height: 35px;
-  background-color: greenyellow;
-  margin-bottom: 30px;
+  background-color: rgb(63, 73, 127);
+  margin-bottom: 15px;
   border-radius: 0 0 10px 10px;
   color:white;
   font-style: 18px;
@@ -34,44 +47,146 @@ footer{
 #container{
   height: 410px;
   padding: 10px;
-  background-color: gold;
+  background-color: #F8F5E4;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around ;
   align-content: space-around;
 }
 
-aside{
-  height: 70px;
-  background-color: black;
-  margin-bottom: 50px;
-  margin: 30px 15px 60px 15px;
-  display: flex;
-  justify-content: space-around;
-}
-
-
 section{
   height:45%;
   width: 30%;
   background-color: white;
   border-radius: 7px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px solid black;
 }
+
+section p{
+  padding: 20px;
+  text-align: center; 
+  font-size: 12px;
+  line-height: 200%;
+  position: relative;
+}
+#mbti{
+  background-image: url("../image/esfj.jpeg");
+  background-size: cover;
+  color : black;
+}
+#nba{
+  background-image: url("../image/USATSI_19233965-e1666030305542.webp");
+  background-size: cover;
+  color:white;
+  position: relative; 
+}
+
+#movie{
+  background-image: url("../image/abouttime.jpeg");
+  background-size: cover;
+  color:white;
+}
+
+#youtube{
+  background-image: url("../image/별놈들.jpeg");
+  background-size: cover;
+  color:white;
+  position:relative;
+}
+
+aside{
+    height: 125px;
+  background-color:#F8F5E4;
+  margin-bottom: 50px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:flex-start;
+}
+
+
+
 
 #team{
-  width: 230px;
+  width: 350px;
   height: 70%;
-  background-color: gold;
+  background-color:#5F85BB  ;
   border-radius: 5px;
   font-style: 15px;
+  border: 1px dashed black;
 }
 
+#team p{
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+#hi p{
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
 
 #hi{
   width: 230px;
   height: 70%;
-  background-color: gold;
+  background-color: #5F85BB;
   color: black;
   border-radius: 5px;
   font-style: 15px;
+  border: 1px dashed black;
+}
+
+footer{
+  height: 130px;
+  background-color: rgb(15, 12, 64);
+}
+
+footer p{
+  text-align:right;
+  color: white;
+  padding: 40px;
+  font-weight:100;
+  font-size: 10px;
+}
+
+.bg{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.bbg{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+section:hover{
+  transform: scale(1.4);
+  transition: all 0.2s linear;  
+}
+
+#alert{
+  display: none;
+  text-align: center;
+  padding-top: 300px;
+}
+
+
+@media(max-width: 800px){
+  #main-container{
+    display:none;
+  }
+  #alert{
+    display: block;
+  }
 }
