@@ -27,7 +27,7 @@ header p{
 
 main{
   height: 600px;
-  width: 1000px;
+  width: 1060px;
   margin: 0 auto;
   background-color: black;
   font-family: 'TAEBAEKmilkyway';
@@ -140,6 +140,7 @@ aside{
   border-radius: 5px;
   font-style: 15px;
 }
+
 
 footer{
   height: 130px;
